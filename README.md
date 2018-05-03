@@ -76,7 +76,7 @@ DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
     8. criterion 
     9. call train and/or test functions
 6. If you want to extract features write a different file don't change the model training file for that, model training file should always be used for training and testing only.
-g. Always use dataloader to load data, don't write a rough code for epoching/batching, if you are not able to find a dataloader for your model, search google or ask team mates and create one.
+7. Always use dataloader to load data, don't write a rough code for epoching/batching, if you are not able to find a dataloader for your model, search google or ask team mates and create one.
 
 # Github versioning
 1. Always use commit major/minor changes to git.
