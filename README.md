@@ -1,6 +1,6 @@
-1. Folder hierarchy for egocentric projects
+# Folder hierarchy for egocentric projects
 
-
+```
 DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
                                                         rgb_lstm.py
                                                         flow_cnn.py
@@ -42,29 +42,30 @@ DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
                                 test_rgb_cnn.csv
                                 test_rgb_lstm.csv
                     /weights /the weight file should always contains all hyperparameters and file name along with rgb/flow, cnn/lstm keywords, make it as explicit as possible
-
-2. Folder structure for staqu ocr
+```
+# Folder structure for staqu ocr
+```
     staqu_ocr / codes / different gits, different methods each have their folder name
              / datasets / each dataset has its folder and everything about that dataset is inside in it for example if a dataset is named IIITH_HINDI and we have certain folders that are some preprocessed verion of this than all those verison should be inside IIITH_HINDI with clear naming that explain what those folders contain
              /wights to store weights
- 
-3. Folder naming conventions
-    a. Names of dataset should always be in caps
-    b. Anything that is not dataset should always be in small and to seperate words use underscore(_)
-    c. NEVER use 1,2,3,.. for versioning, make folder names very clear and informative
-    d. For weights if using tensorflow or anything that generates multiple snapshot use directory name same as the code_folder inside weights to save all the weights/snapshots for that particualr code, e.g. crnn has weights saved at staqu_ocr/weights/crnn/*pth or *.tflean or *.caffemodel
+ ```
+# Folder naming conventions
+    1. Names of dataset should always be in caps
+    2. Anything that is not dataset should always be in small and to seperate words use underscore(_)
+    3. NEVER use 1,2,3,.. for versioning, make folder names very clear and informative
+    4. For weights if using tensorflow or anything that generates multiple snapshot use directory name same as the code_folder inside weights to save all the weights/snapshots for that particualr code, e.g. crnn has weights saved at staqu_ocr/weights/crnn/*pth or *.tflean or *.caffemodel
 
-4. File naming conventions
-    a. Unless until the file is a config file or holds only constanst it should never have any caps letter, only config/constant files should be named in all CAPS
-    b. Use undersocre(_) to seperate words in file names
-    c. Never create another version of a file named like this train.py==>train_fc1.py. If there a file is changed commit it to github before change and work on the same file, if old version is required just go to the old version
+# File naming conventions
+    1. Unless until the file is a config file or holds only constanst it should never have any caps letter, only config/constant files should be named in all CAPS
+    2. Use undersocre(_) to seperate words in file names
+    3. Never create another version of a file named like this train.py==>train_fc1.py. If there a file is changed commit it to github before change and work on the same file, if old version is required just go to the old version
 
-5. Coding styles
-    a. Always use proper indentetion and seperate coding block by lines
-    b. Never write any hyperparameter or file path in the code line iteself use first lines to intialise constans or use a config file
-    c. Alwasy use relative path, this will make sure that when you run same code on another machine with different dataset you don't need to find every directory and file again, just change few things on config file like ../../datasets/GTEA/pngs to ../../datasets/EGTE/pngs
-    d. Try to add comments 
-    e. If using pytorch use follwing code flow: (for example view https://github.com/sagarverma/ego_action_recognition)
+# Coding styles
+    1. Always use proper indentetion and seperate coding block by lines
+    2. Never write any hyperparameter or file path in the code line iteself use first lines to intialise constans or use a config file
+    3. Alwasy use relative path, this will make sure that when you run same code on another machine with different dataset you don't need to find every directory and file again, just change few things on config file like ../../datasets/GTEA/pngs to ../../datasets/EGTE/pngs
+    4. Try to add comments 
+    5. If using pytorch use follwing code flow: (for example view https://github.com/sagarverma/ego_action_recognition)
         i) imports
         ii) hyperparams, filenames as constants if not using a constanst/config file
         iv) model defition
@@ -74,9 +75,10 @@ DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
         vi) optimizer
         vii) criterion 
         viii) call train and/or test functions
-    f. If you want to extract features write a different file don't change the model training file for that, model training file should always be used for training and testing only
+    6. If you want to extract features write a different file don't change the model training file for that, model training file should always be used for training and testing only
     g. Always use dataloader to load data, don't write a rough code for epoching/batching, if you are not able to find a dataloader for your model, search google or ask team mates and create one
 
-6. Github versioning
-    a. Always use commit major/minor changes to git.
-    b. Never rush to experiments, clean code, commit changes, delete stale files.
+# Github versioning
+    1. Always use commit major/minor changes to git.
+    2. Never rush to experiments, clean code, commit changes, delete stale files.
+    
