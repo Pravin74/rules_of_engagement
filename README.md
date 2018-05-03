@@ -66,15 +66,15 @@ DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
 3. Alwasy use relative path, this will make sure that when you run same code on another machine with different dataset you don't need to find every directory and file again, just change few things on config file like ../../datasets/GTEA/pngs to ../../datasets/EGTE/pngs
 4. Try to add comments 
 5. If using pytorch use follwing code flow: (for example view https://github.com/sagarverma/ego_action_recognition)
-..i) imports
-..ii) hyperparams, filenames as constants if not using a constanst/config file
-..iv) model defition
-..iii) all other functions including train/test
-..iv) dataloading
-..v) model create
-..vi) optimizer
-..vii) criterion 
-..viii) call train and/or test functions
+    1. imports
+    2. hyperparams, filenames as constants if not using a constanst/config file
+    3. model defition
+    4. all other functions including train/test
+    5. dataloading
+    6. model create
+    7. optimizer
+    8. criterion 
+    9. call train and/or test functions
 6. If you want to extract features write a different file don't change the model training file for that, model training file should always be used for training and testing only
 g. Always use dataloader to load data, don't write a rough code for epoching/batching, if you are not able to find a dataloader for your model, search google or ask team mates and create one
 
