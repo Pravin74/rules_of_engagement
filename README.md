@@ -81,4 +81,4 @@ DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
 # Github versioning
     1. Always use commit major/minor changes to git.
     2. Never rush to experiments, clean code, commit changes, delete stale files.
-    
+    3. In commit message be explicit about the changes, dosen't matter how much line it takes. Write full path of files relative to project structure where changes have been made.
