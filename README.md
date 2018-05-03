@@ -80,5 +80,5 @@ g. Always use dataloader to load data, don't write a rough code for epoching/bat
 
 # Github versioning
 1. Always use commit major/minor changes to git.
-2. Never rush to experiments, clean code, commit changes, delete stale files.
+2. Never rush to experiments. Always clean code, commit changes, and delete stale files.
 3. In commit message be explicit about the changes, dosen't matter how much line it takes. Write full path of files relative to project structure where changes have been made.
