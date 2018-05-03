@@ -64,7 +64,7 @@ DATASET_NAME(GTEA) /  codes /ego_action_recognition  / rgb_cnn.py
 1. Always use proper indentetion and seperate coding block by lines.
 2. Never write any hyperparameter or file path in the code line iteself use first lines to intialise constans or use a config file.
 3. Alwasy use relative path, this will make sure that when you run same code on another machine with different dataset you don't need to find every directory and file again, just change few things on config file like ../../datasets/GTEA/pngs to ../../datasets/EGTE/pngs.
-4. Try to add comments 
+4. Try to add comments.
 5. If using pytorch use follwing code flow: (for example view https://github.com/sagarverma/ego_action_recognition)
     1. imports
     2. hyperparams, filenames as constants if not using a constanst/config file
